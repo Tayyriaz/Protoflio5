@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">ML Engineer</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Building <span class="gradient-text">AI/ML Pipelines</span><br>
+                    That Transform Data Into Production Models
+                </h1>
+                <p class="hero-subtitle">
+                    Full-stack ML engineer specializing in end-to-end automated pipelines, 
+                    LLM fine-tuning, and production-ready AI systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">🤖</div>
+                    <div class="card-text">ML Pipelines</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-text">Fine-Tuning</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">🚀</div>
+                    <div class="card-text">Deployment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">End-to-end ML pipelines and AI systems</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Feedback-to-Fine-Tuning Pipeline -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Featured</div>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="project-icon">🔄</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Feedback-to-Fine-Tuning Pipeline</h3>
+                        <p>Automated end-to-end ML pipeline that transforms user feedback into production-ready fine-tuned models. Includes automated evaluation, promotion gates, and deployment automation.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>OpenAI API</span>
+                            <span>ML Pipeline</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="openProjectDemo('feedback-pipeline')">View Demo</a>
+                            <a href="#" class="project-link secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Healthcare AI Chatbot -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="project-icon">🏥</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Healthcare AI Chatbot</h3>
+                        <p>Production healthcare AI assistant with real-time feedback collection, preference learning, and continuous model improvement. Built with medical accuracy validation.</p>
+                        <div class="project-tags">
+                            <span>LLM</span>
+                            <span>Healthcare AI</span>
+                            <span>RLHF</span>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="openProjectDemo('healthcare-chatbot')">View Demo</a>
+                            <a href="#" class="project-link secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Automated Model Evaluation System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="project-icon">📊</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automated Model Evaluation System</h3>
+                        <p>Comprehensive evaluation framework for comparing fine-tuned models against baselines. Includes automated benchmarking, quality metrics, and deployment decision logic.</p>
+                        <div class="project-tags">
+                            <span>Evaluation</span>
+                            <span>Benchmarking</span>
+                            <span>Python</span>
+                            <span>MLOps</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="openProjectDemo('evaluation-system')">View Demo</a>
+                            <a href="#" class="project-link secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: LLM Fine-Tuning Platform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <div class="project-icon">🎯</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>LLM Fine-Tuning Platform</h3>
+                        <p>Complete platform for fine-tuning LLMs with preference data. Supports DPO, RLHF, and OpenAI fine-tuning API. Includes data preparation, training, and deployment workflows.</p>
+                        <div class="project-tags">
+                            <span>Fine-Tuning</span>
+                            <span>DPO</span>
+                            <span>RLHF</span>
+                            <span>OpenAI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="openProjectDemo('finetuning-platform')">View Demo</a>
+                            <a href="#" class="project-link secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>ML/AI</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">LLM Fine-Tuning</span>
+                        <span class="skill-item">RLHF/DPO</span>
+                        <span class="skill-item">OpenAI API</span>
+                        <span class="skill-item">Model Evaluation</span>
+                        <span class="skill-item">ML Pipelines</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">REST APIs</span>
+                        <span class="skill-item">SQL/NoSQL</span>
+                        <span class="skill-item">Docker</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>MLOps</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Model Deployment</span>
+                        <span class="skill-item">CI/CD</span>
+                        <span class="skill-item">Monitoring</span>
+                        <span class="skill-item">Infrastructure</span>
+                        <span class="skill-item">Automation</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">Vercel</span>
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Terraform</span>
+                        <span class="skill-item">Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About</h2>
+                    <p>
+                        I specialize in building end-to-end ML pipelines that transform raw data and user feedback 
+                        into production-ready AI models. My focus is on creating automated, scalable systems that 
+                        continuously improve through user interactions.
+                    </p>
+                    <p>
+                        With expertise in LLM fine-tuning, preference learning, and MLOps, I build systems that 
+                        go beyond training scripts—complete pipelines from data ingestion to automated deployment 
+                        with quality gates and evaluation frameworks.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">✅</div>
+                            <div>
+                                <strong>Production-Ready</strong>
+                                <p>Code that's built for scale, not just prototypes</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🔄</div>
+                            <div>
+                                <strong>Automated Pipelines</strong>
+                                <p>End-to-end automation with minimal human intervention</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">📊</div>
+                            <div>
+                                <strong>Evaluation-First</strong>
+                                <p>Rigorous testing and benchmarking before deployment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to build your ML pipeline? Let's discuss your project.</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>Available for project inquiries</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h3>Availability</h3>
+                            <p>Open to new projects</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Remote / Global</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Project Details" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ML Engineer Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Demo Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <h2 id="modalTitle"></h2>
+                <div id="modalDescription"></div>
+                <div class="modal-actions">
+                    <a href="#" id="modalDemoLink" class="btn btn-primary" target="_blank">Open Demo</a>
+                    <button class="btn btn-secondary" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
