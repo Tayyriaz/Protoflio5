@@ -39,64 +39,103 @@ window.addEventListener('scroll', () => {
 
 // Project demo modal
 const projectData = {
-    'feedback-pipeline': {
-        title: 'Feedback-to-Fine-Tuning Pipeline',
+    'options-scraper': {
+        title: 'Financial Options Data Scraper',
         description: `
-            <p>Complete end-to-end ML pipeline that transforms user feedback into production-ready fine-tuned models.</p>
+            <p>Python scraper for historical interest rate options data from CME DataMine.</p>
             <h4>Features:</h4>
             <ul style="margin: 1rem 0; padding-left: 1.5rem;">
-                <li>Automated feedback ingestion and data preparation</li>
-                <li>Fine-tuning using OpenAI API</li>
-                <li>Automated evaluation and benchmarking</li>
-                <li>Promotion gates for deployment decisions</li>
-                <li>Complete web UI for interaction</li>
+                <li>Extracts Friday settlement data only</li>
+                <li>Supports multiple symbols (ZN, ZT, ZF, ZB, ZQ, SR3)</li>
+                <li>Full options chains with all strikes</li>
+                <li>Calculates horizon buckets (Q0-Q6)</li>
+                <li>5+ years of historical data (Jan 2021+)</li>
+                <li>Progress saving and error handling</li>
+                <li>Data validation and quality checks</li>
             </ul>
-            <p><strong>Tech Stack:</strong> Python, FastAPI, OpenAI API, SQLite, HTML/JS</p>
-        `,
-        demoLink: 'https://feedback-finetuning-pipeline.vercel.app'
-    },
-    'healthcare-chatbot': {
-        title: 'Healthcare AI Chatbot',
-        description: `
-            <p>Production healthcare AI assistant with real-time feedback collection and continuous improvement.</p>
-            <h4>Features:</h4>
-            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
-                <li>Medical accuracy validation</li>
-                <li>Preference learning from user feedback</li>
-                <li>RLHF implementation</li>
-                <li>Real-time conversation handling</li>
-            </ul>
-            <p><strong>Tech Stack:</strong> Python, LLM, RLHF, FastAPI</p>
+            <p><strong>Tech Stack:</strong> Python, Pandas, Requests, Web Scraping</p>
+            <p><strong>Data Fields:</strong> ticker, trade_date, expiration_date, option_type, strike_price, settlement_price, underlying_futures_settle, days_to_expiry, horizon_bucket</p>
         `,
         demoLink: '#'
     },
-    'evaluation-system': {
-        title: 'Automated Model Evaluation System',
+    'data-collection': {
+        title: 'Historical Data Collection System',
         description: `
-            <p>Comprehensive evaluation framework for comparing fine-tuned models against baselines.</p>
+            <p>Automated system for collecting and processing historical financial data.</p>
             <h4>Features:</h4>
             <ul style="margin: 1rem 0; padding-left: 1.5rem;">
-                <li>Automated benchmarking</li>
-                <li>Multiple quality metrics</li>
-                <li>Baseline comparison</li>
-                <li>Deployment decision logic</li>
+                <li>Large-scale data scraping</li>
+                <li>Progress tracking and resume capability</li>
+                <li>Error handling and retry logic</li>
+                <li>Data validation and quality checks</li>
+                <li>One-time bulk downloads</li>
+                <li>Multiple data source support</li>
             </ul>
-            <p><strong>Tech Stack:</strong> Python, Evaluation Metrics, MLOps</p>
+            <p><strong>Tech Stack:</strong> Python, Web Scraping, Data Processing</p>
         `,
         demoLink: '#'
     },
-    'finetuning-platform': {
-        title: 'LLM Fine-Tuning Platform',
+    'data-analysis': {
+        title: 'Comprehensive Data Analysis Tool',
         description: `
-            <p>Complete platform for fine-tuning LLMs with preference data and deployment workflows.</p>
+            <p>Complete Python data analysis solution using Pandas and Matplotlib for data cleaning, analysis, and visualization.</p>
             <h4>Features:</h4>
             <ul style="margin: 1rem 0; padding-left: 1.5rem;">
-                <li>DPO and RLHF support</li>
-                <li>OpenAI fine-tuning API integration</li>
-                <li>Data preparation pipelines</li>
-                <li>Automated training workflows</li>
+                <li>Data loading and exploration</li>
+                <li>Automated data cleaning (missing values, duplicates, outliers)</li>
+                <li>Statistical analysis and summaries</li>
+                <li>Beautiful visualizations with Matplotlib</li>
+                <li>Automated report generation</li>
             </ul>
-            <p><strong>Tech Stack:</strong> Python, OpenAI API, DPO, RLHF</p>
+            <p><strong>Tech Stack:</strong> Python, Pandas, Matplotlib, Seaborn, NumPy</p>
+        `,
+        demoLink: '#'
+    },
+    'sales-dashboard': {
+        title: 'Sales Data Dashboard',
+        description: `
+            <p>Interactive sales analytics dashboard with time series analysis and performance metrics.</p>
+            <h4>Features:</h4>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Time series analysis</li>
+                <li>Regional performance metrics</li>
+                <li>Product category insights</li>
+                <li>Correlation analysis</li>
+                <li>Publication-ready visualizations</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Python, Pandas, Matplotlib, Data Analysis</p>
+        `,
+        demoLink: '#'
+    },
+    'customer-analysis': {
+        title: 'Customer Behavior Analysis',
+        description: `
+            <p>Deep dive into customer data with correlation analysis and segmentation.</p>
+            <h4>Features:</h4>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Data cleaning and validation</li>
+                <li>Statistical summaries</li>
+                <li>Correlation analysis</li>
+                <li>Customer segmentation</li>
+                <li>Trend identification</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Python, Pandas, Seaborn, Analytics</p>
+        `,
+        demoLink: '#'
+    },
+    'financial-analyzer': {
+        title: 'Financial Data Analyzer',
+        description: `
+            <p>Advanced financial data analysis with time series forecasting and risk analysis.</p>
+            <h4>Features:</h4>
+            <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+                <li>Large dataset processing</li>
+                <li>Time series analysis</li>
+                <li>Performance metrics</li>
+                <li>Risk analysis</li>
+                <li>Publication-ready charts</li>
+            </ul>
+            <p><strong>Tech Stack:</strong> Python, Pandas, Matplotlib, Finance Analytics</p>
         `,
         demoLink: '#'
     }

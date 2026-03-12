@@ -1,0 +1,6 @@
+# Ignore unnecessary files for Vercel deployment
+DEPLOY.md
+STYLING_CHECK.md
+test.html
+README.md
+*.md

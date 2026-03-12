@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML Engineer Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Python Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="/styles.css" onerror="console.error('CSS failed to load')">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">ML Engineer</div>
+            <div class="nav-brand">Data Analyst</div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -34,12 +34,12 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    Building <span class="gradient-text">AI/ML Pipelines</span><br>
-                    That Transform Data Into Production Models
+                    Transforming <span class="gradient-text">Data Into Insights</span><br>
+                    With Python, Pandas & Matplotlib
                 </h1>
                 <p class="hero-subtitle">
-                    Full-stack ML engineer specializing in end-to-end automated pipelines, 
-                    LLM fine-tuning, and production-ready AI systems.
+                    Python developer specializing in data analysis, visualization, and insights. 
+                    Expert in data manipulation, cleaning, and presenting findings from complex datasets.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -48,16 +48,16 @@
             </div>
             <div class="hero-visual">
                 <div class="floating-card card-1">
-                    <div class="card-icon">🤖</div>
-                    <div class="card-text">ML Pipelines</div>
+                    <div class="card-icon">📊</div>
+                    <div class="card-text">Data Analysis</div>
                 </div>
                 <div class="floating-card card-2">
-                    <div class="card-icon">⚡</div>
-                    <div class="card-text">Fine-Tuning</div>
+                    <div class="card-icon">📈</div>
+                    <div class="card-text">Visualization</div>
                 </div>
                 <div class="floating-card card-3">
-                    <div class="card-icon">🚀</div>
-                    <div class="card-text">Deployment</div>
+                    <div class="card-icon">🐍</div>
+                    <div class="card-text">Python</div>
                 </div>
             </div>
         </div>
@@ -67,97 +67,120 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">End-to-end ML pipelines and AI systems</p>
+            <p class="section-subtitle">Data analysis, scraping, and visualization projects</p>
             
             <div class="projects-grid">
-                <!-- Project 1: Feedback-to-Fine-Tuning Pipeline -->
+                <!-- Project 1: Financial Options Data Scraper -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="project-badge">Featured</div>
                         <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                            <div class="project-icon">🔄</div>
+                            <div class="project-icon">📈</div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Feedback-to-Fine-Tuning Pipeline</h3>
-                        <p>Automated end-to-end ML pipeline that transforms user feedback into production-ready fine-tuned models. Includes automated evaluation, promotion gates, and deployment automation.</p>
+                        <h3>Financial Options Data Scraper</h3>
+                        <p>Python scraper for historical interest rate options data from CME DataMine. Extracts Friday settlement data for options chains (ZN, ZT, ZF, ZB, ZQ, SR3), calculates horizon buckets, and processes full option chains with all strikes. Handles 5+ years of historical data.</p>
                         <div class="project-tags">
                             <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>OpenAI API</span>
-                            <span>ML Pipeline</span>
+                            <span>Web Scraping</span>
+                            <span>Pandas</span>
+                            <span>Financial Data</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" onclick="openProjectDemo('feedback-pipeline')">View Demo</a>
+                            <a href="#" class="project-link" onclick="openProjectDemo('options-scraper')">View Demo</a>
                             <a href="#" class="project-link secondary">Learn More</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2: Healthcare AI Chatbot -->
+                <!-- Project 2: Comprehensive Data Analysis Tool -->
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                            <div class="project-icon">🏥</div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Healthcare AI Chatbot</h3>
-                        <p>Production healthcare AI assistant with real-time feedback collection, preference learning, and continuous model improvement. Built with medical accuracy validation.</p>
-                        <div class="project-tags">
-                            <span>LLM</span>
-                            <span>Healthcare AI</span>
-                            <span>RLHF</span>
-                            <span>FastAPI</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link" onclick="openProjectDemo('healthcare-chatbot')">View Demo</a>
-                            <a href="#" class="project-link secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Automated Model Evaluation System -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
                             <div class="project-icon">📊</div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Automated Model Evaluation System</h3>
-                        <p>Comprehensive evaluation framework for comparing fine-tuned models against baselines. Includes automated benchmarking, quality metrics, and deployment decision logic.</p>
+                        <h3>Comprehensive Data Analysis Tool</h3>
+                        <p>Complete Python data analysis solution using Pandas and Matplotlib. Features data cleaning, statistical analysis, visualization, and automated report generation. Handles missing values, outliers, and creates beautiful charts.</p>
                         <div class="project-tags">
-                            <span>Evaluation</span>
-                            <span>Benchmarking</span>
                             <span>Python</span>
-                            <span>MLOps</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Data Analysis</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" onclick="openProjectDemo('evaluation-system')">View Demo</a>
+                            <a href="#" class="project-link" onclick="openProjectDemo('data-analysis')">View Demo</a>
                             <a href="#" class="project-link secondary">Learn More</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4: LLM Fine-Tuning Platform -->
+                <!-- Project 2: Sales Data Dashboard -->
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="image-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                            <div class="project-icon">🎯</div>
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="project-icon">📈</div>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>LLM Fine-Tuning Platform</h3>
-                        <p>Complete platform for fine-tuning LLMs with preference data. Supports DPO, RLHF, and OpenAI fine-tuning API. Includes data preparation, training, and deployment workflows.</p>
+                        <h3>Sales Data Dashboard</h3>
+                        <p>Interactive sales analytics dashboard with time series analysis, regional performance metrics, and product category insights. Built with Pandas for data manipulation and Matplotlib for visualization.</p>
                         <div class="project-tags">
-                            <span>Fine-Tuning</span>
-                            <span>DPO</span>
-                            <span>RLHF</span>
-                            <span>OpenAI</span>
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                            <span>Dashboard</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link" onclick="openProjectDemo('finetuning-platform')">View Demo</a>
+                            <a href="#" class="project-link" onclick="openProjectDemo('sales-dashboard')">View Demo</a>
+                            <a href="#" class="project-link secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Customer Behavior Analysis -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="project-icon">👥</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Customer Behavior Analysis</h3>
+                        <p>Deep dive into customer data with correlation analysis, segmentation, and trend identification. Includes data cleaning, statistical summaries, and comprehensive visualizations to uncover insights.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Seaborn</span>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="openProjectDemo('customer-analysis')">View Demo</a>
+                            <a href="#" class="project-link secondary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Historical Data Collection System -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <div class="project-icon">🔍</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Historical Data Collection System</h3>
+                        <p>Automated system for collecting and processing historical financial data. Handles large-scale data scraping, progress tracking, error handling, and data validation. Designed for one-time bulk downloads with resume capability.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Web Scraping</span>
+                            <span>Data Collection</span>
+                            <span>Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="openProjectDemo('data-collection')">View Demo</a>
                             <a href="#" class="project-link secondary">Learn More</a>
                         </div>
                     </div>
@@ -174,46 +197,46 @@
             
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>ML/AI</h3>
+                    <h3>Data Analysis</h3>
                     <div class="skill-items">
-                        <span class="skill-item">LLM Fine-Tuning</span>
-                        <span class="skill-item">RLHF/DPO</span>
-                        <span class="skill-item">OpenAI API</span>
-                        <span class="skill-item">Model Evaluation</span>
-                        <span class="skill-item">ML Pipelines</span>
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">Data Cleaning</span>
+                        <span class="skill-item">Statistical Analysis</span>
+                        <span class="skill-item">Data Manipulation</span>
+                        <span class="skill-item">Data Exploration</span>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3>Visualization</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Matplotlib</span>
+                        <span class="skill-item">Seaborn</span>
+                        <span class="skill-item">Plotly</span>
+                        <span class="skill-item">Charts & Graphs</span>
+                        <span class="skill-item">Dashboards</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Programming</h3>
                     <div class="skill-items">
                         <span class="skill-item">Python</span>
-                        <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">REST APIs</span>
-                        <span class="skill-item">SQL/NoSQL</span>
-                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Jupyter Notebooks</span>
+                        <span class="skill-item">Data Structures</span>
+                        <span class="skill-item">OOP</span>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <h3>MLOps</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Model Deployment</span>
-                        <span class="skill-item">CI/CD</span>
-                        <span class="skill-item">Monitoring</span>
-                        <span class="skill-item">Infrastructure</span>
-                        <span class="skill-item">Automation</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Tools</h3>
+                    <h3>Tools & Libraries</h3>
                     <div class="skill-items">
                         <span class="skill-item">Git</span>
-                        <span class="skill-item">Vercel</span>
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">Terraform</span>
-                        <span class="skill-item">Kubernetes</span>
+                        <span class="skill-item">CSV/Excel</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">Data Validation</span>
+                        <span class="skill-item">Report Generation</span>
                     </div>
                 </div>
             </div>
@@ -227,35 +250,37 @@
                 <div class="about-text">
                     <h2 class="section-title">About</h2>
                     <p>
-                        I specialize in building end-to-end ML pipelines that transform raw data and user feedback 
-                        into production-ready AI models. My focus is on creating automated, scalable systems that 
-                        continuously improve through user interactions.
+                        I'm a Python developer passionate about data analysis and visualization. I specialize in 
+                        transforming raw datasets into actionable insights using Python libraries like Pandas and Matplotlib. 
+                        My expertise includes data cleaning, statistical analysis, and creating compelling visualizations 
+                        that help teams make data-driven decisions.
                     </p>
                     <p>
-                        With expertise in LLM fine-tuning, preference learning, and MLOps, I build systems that 
-                        go beyond training scripts—complete pipelines from data ingestion to automated deployment 
-                        with quality gates and evaluation frameworks.
+                        With strong experience in data manipulation, cleaning, and visualization, I work closely with 
+                        data teams to analyze complex datasets, identify patterns, and present findings in clear, 
+                        understandable formats. I'm skilled in handling missing data, outliers, and creating 
+                        publication-ready visualizations.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight-item">
                             <div class="highlight-icon">✅</div>
                             <div>
-                                <strong>Production-Ready</strong>
-                                <p>Code that's built for scale, not just prototypes</p>
+                                <strong>Clean & Accurate</strong>
+                                <p>Thorough data cleaning and validation processes</p>
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <div class="highlight-icon">🔄</div>
+                            <div class="highlight-icon">📈</div>
                             <div>
-                                <strong>Automated Pipelines</strong>
-                                <p>End-to-end automation with minimal human intervention</p>
+                                <strong>Beautiful Visualizations</strong>
+                                <p>Publication-ready charts and graphs</p>
                             </div>
                         </div>
                         <div class="highlight-item">
-                            <div class="highlight-icon">📊</div>
+                            <div class="highlight-icon">💡</div>
                             <div>
-                                <strong>Evaluation-First</strong>
-                                <p>Rigorous testing and benchmarking before deployment</p>
+                                <strong>Actionable Insights</strong>
+                                <p>Clear findings and recommendations from data</p>
                             </div>
                         </div>
                     </div>
@@ -333,6 +358,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
